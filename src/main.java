@@ -7,11 +7,13 @@ import javafx.scene.text.Text;
 import javafx.stage.Stage;
 
 public class main extends Application {
+    //This lauches he main window to open the program
     public static void main(String[] args) {
         launch(args);
     }
     @Override
     public void start(Stage primaryStage) throws Exception {
+        //This laynhes the pain window, where the user can choose PVP or PVC, and has intro text
         Stage window = primaryStage;
         Button pvpb = new Button("Player V. Player");
         pvpb.setOnAction(e->{winDow.run(); window.close();});
