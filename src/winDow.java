@@ -11,14 +11,18 @@ import javafx.scene.text.Text;
 import javafx.stage.Stage;
 
 public class winDow {
+    //This class sets the board for the game
     public static int player=1;
     public static void setPlayer(int i){
+        //sets the player as an int
         player = i;
     }
     public static int getPlayer(){
+        //this returns the int set for the player
         return player;
     }
     public static void run(){
+        //this runs the game by setting the board with buttons
         Stage window = new Stage();
         window.setTitle("Connect 4");
 
