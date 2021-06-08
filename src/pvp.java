@@ -5,11 +5,13 @@ import javafx.scene.layout.VBox;
 import javafx.stage.Stage;
 import javafx.scene.text.Text;
 public class pvp {
+    //This shows the scores for the PVP game
     public static int p1Score = 0;
     public static int p2Score = 0;
     public static int p1Wins = 0;
     public static int p2Wins = 0;
     public static void p1Win() {
+        //This shows the results if the player 1 wins
         Stage window = new Stage();
         Text score = new Text("PLAYER ONE WINS");
         Text p1sc = new Text("PLAYER ONE SCORE: " + p1Score);
@@ -27,6 +29,7 @@ public class pvp {
         window.show();
     }
     public static void p2Win() {
+        //This shows the reults if player 2 wins
         Stage window = new Stage();
         Text score = new Text("PLAYER TWO WINS");
         Text p1sc = new Text("PLAYER ONE SCORE: " + p1Score);
