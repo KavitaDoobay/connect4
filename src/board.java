@@ -1,7 +1,7 @@
-public class board {
+public class board { //This class sets up the Connect 4 board
     public static int[][] board = new int[7][6];
     //player1=1, player2=2
-    public static void setTile(int r, int c, int a){
+    public static void setTile(int r, int c, int a){//This sets the specified tile as belonging to the specified player
         if(board[r][c]==0)
             board[r][c]= winDow.getPlayer();
         if(winDow.getPlayer()==1) {
@@ -25,7 +25,7 @@ public class board {
             pvp.p2Win();
         }
     }
-    public static boolean isWinner(int player, int[][] grid){
+    public static boolean isWinner(int player, int[][] grid){//This checks if either player is the winner
         //check for 4 across
         for(int row = 0; row<grid.length; row++){
             for (int col = 0;col < grid[0].length - 3;col++){
