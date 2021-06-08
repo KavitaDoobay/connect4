@@ -7,14 +7,15 @@ import javafx.scene.text.Text;
 import javafx.stage.Stage;
 
 public class pvc {
+    //This runs the player v. computer game
     public static int player=1;
-    public static void setPlayer(int i){
+    public static void setPlayer(int i){//this sets an int to represent the player
         player = i;
     }
-    public static int getPlayer(){
+    public static int getPlayer(){//this returns the player's number
         return player;
     }
-    public static void run(){
+    public static void run(){//This runs the game by setting up the board with buttons to select places for each player
         Stage window = new Stage();
         window.setTitle("Connect 4");
 
