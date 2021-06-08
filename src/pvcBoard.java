@@ -1,10 +1,12 @@
 import java.util.Random;
 
 public class pvcBoard {
+    //This makes the player v. computer board
     public static int[][] board = new int[7][6];
     //player1=1, player2=2
 
     public static void setTile(int r, int c, int a){
+        //this sets the specified tile for the set player
         if(board[r][c]==0)
             board[r][c]= pvc.getPlayer();
         if(pvc.getPlayer()==1) {
@@ -30,6 +32,7 @@ public class pvcBoard {
     }
 
     public static void compMove(){
+        //this gets the computer's move and sets it on the board
         Random random = new Random();
         int r = random.nextInt(7);
         int c = random.nextInt(6);
@@ -49,6 +52,7 @@ public class pvcBoard {
         setTile(r, c, 9);
     }
     public static boolean isWinner(int player, int[][] grid){
+        //this checks the board for the winner in all directions
         //check for 4 across
         for(int row = 0; row<grid.length; row++){
             for (int col = 0;col < grid[0].length - 3;col++){
